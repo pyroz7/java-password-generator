@@ -1,6 +1,6 @@
 package org.lessons.java.security;
 
-import java.sql.SQLOutput;
+
 import java.util.Scanner;
 
 public class PasswordGenerator {
@@ -19,7 +19,13 @@ public class PasswordGenerator {
         String favoriteColor = scan.nextLine();
 
         System.out.print("Date of Birth: ");
-        int dateBirth = scan.nextInt();
+        int day = scan.nextInt();
+        int month = scan.nextInt();
+        int year = scan.nextInt();
+        int dateBirth = day + month + year;
+
+
+        System.out.println (name + surname + favoriteColor + dateBirth );
 
 
 
